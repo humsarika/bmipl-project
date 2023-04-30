@@ -1,90 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-    <title>BMIPL</title>
-  </head>
-  <body>
-    <header>
-        <nav>
-          <input type="checkbox" id="check">
-          <label for="check" class="checkbtn">
-            <i class="fa fa-bars"></i>
-          </label>
-          <img src="./img/logo.jpeg" alt="logo" class="logo-img">
-          <ul>
-            <li><a class="active" href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Our Products</a></li>
-            <li><a href="#">Sustainability</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a class="RequestQuote" href="#">Request Quote</a></li>
-          </ul>
-        </nav>
-    </header>
-    <section class="home" id="home">
-      <div class="video-container">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- bootstrao script -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>BMIPL</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fa fa-bars"></i>
+      </label>
+      <img src="./img/logo.jpeg" alt="logo" class="logo-img">
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Our Products</a></li>
+        <li><a href="#">Sustainability</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a class="RequestQuote" href="#">Request Quote</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="home" id="home">
+    <div id="testimonials-carousel" class="carousel slide video-container" data-ride="carousel">
+      <div class="carousel-inner video-container">
         <!-- video -->
         <video autoplay muted loop id="homeVideo">
-          <source src="./vdo/smartpack_video_trailer_v1_4.mp4" type="video/mp4" />
+          <source src="./vdo/home-video1.mp4" type="video/mp4" />
         </video>
-        <!-- video overlay text -->
-        
-        <div class="overlay">
-          <p>India's Biggest<br>Manufacturer</p>
-          
-        </div>
-        <div class="overlay2">
-          <p>Of High Quality woven block bottom sacks</p>
-        </div>
-        <div class="playbtn">
-          <img src="https://img.icons8.com/ios-filled/170/F18C2E/play-button-circled--v4.png"/>
-        </div>
-        <div class="message-icon">
-          <img src="https://img.icons8.com/ios-filled/75/F18C2E/messages-mac.png"/>
-        </div>
-        <a href="#" class="abt-btn">About us</a>
-      </div>
-    </section>
-    <section class="section2">
-      
-       <div class="offerPage">
-        <svg height="200" width="200">
-          <circle cx="10" cy="10" r="150" stroke="transparent" stroke-width="1" fill="#F18C2E" opacity="0.8" />
-        </svg> 
-          <div class="heading">
-          <h1>What we offer</h1>
-        </div>
-          <div class="line"></div>
-          <div class="box"></div>
-          <div class="content">
-            <div class="text">
-              <h2>We provide</h2>
-              <ul type="bullets">
-                <li>environmentally safe, sound</li>
-                <li>sustainable woven sacks</li>
-              </ul>
-              <p>resulting in a lower carbon footprint and a lower negative impact on the environment. Our most recent and 
-                technologically advanced manufacturing unit is well-equipped with all types of cutting-edge machinery and 
-                instruments to meet the needs of our clients.</p>
-            </div>
-            <div class="img">
-                <img src="./img/bags-1.png" alt="bag image">
-
-            </div>
+        <div class="carousel-item active container-fluid overlay1">
+          <div class="overlay1">
+            <p>India's Biggest<br>Manufacturer</p>
           </div>
+          <div class="overlay2">
+            <p>Of High Quality woven block bottom sacks</p>
+          </div>
+          <div class="playbtn">
+            <img src="https://img.icons8.com/ios-filled/170/F18C2E/play-button-circled--v4.png" />
+          </div>
+          <div class="message-icon">
+            <img src="https://img.icons8.com/ios-filled/75/F18C2E/messages-mac.png" />
+          </div>
+          <a href="#" class="abt-btn" style="text-decoration: none;">About us</a>
+        </div>
+        <div class="carousel-item container-fluid overlay1">
+          <div class="overlay1">
+            <p>Slide 2</p>
+          </div>
+          <div class="overlay2">
+            <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+
       </div>
-    </section>
-  </body>
+      <button class="carousel-control-prev" type="button" data-target="#testimonials-carousel" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+
+      </button>
+      <button class="carousel-control-next" type="button" data-target="#testimonials-carousel" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+
+      </button>
+    </div>
+  </section>
+
+    <!-- ----------section  2----------- -->
+
+  <section class="section2">
+
+    <div class="offerPage">
+      <svg height="200" width="200">
+        <circle cx="10" cy="10" r="150" stroke="transparent" stroke-width="1" fill="#F18C2E" opacity="0.8" />
+      </svg>
+      <div class="heading">
+        <h1>What we offer</h1>
+      </div>
+      <div class="line"></div>
+      <div class="box"></div>
+      <div class="content">
+        <div class="text">
+          <h2>We provide</h2>
+          <ul type="bullets">
+            <li>environmentally safe, sound</li>
+            <li>sustainable woven sacks</li>
+          </ul>
+          <p>resulting in a lower carbon footprint and a lower negative impact on the environment. Our most recent and
+            technologically advanced manufacturing unit is well-equipped with all types of cutting-edge machinery and
+            instruments to meet the needs of our clients.</p>
+        </div>
+        <div class="img">
+          <img src="./img/bags-1.png" alt="bag image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- -----------------section 3------------------- -->
+  <div class="ourBenifts">
+    <div class="box-small"></div>
+    <div class="text-aboveBox">
+      <p>Our Benifits</p>
+    </div>
+  </div>
+</body>
+
 </html>
