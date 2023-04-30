@@ -1,0 +1,228 @@
+/* ------ Variables--------- */
+:root {
+    --color-black: rgb(0, 0, 0);
+    --color-off-white: rgb(248, 245, 245);
+    --color-white: rgb(255, 255, 255);
+    --color-grey: rgb(123, 120, 120);
+    --color-orange:rgb(214, 106, 17);
+    --bold: 700;
+    --semi-bold: 500;
+
+}
+
+*,*::after{
+    box-sizing:border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    }
+
+nav{
+    background:var(--color-off-white);
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    z-index: 49;
+}
+.logo-img{
+    width: 70px;
+    height: 70px;
+    margin: 5px 30px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0px 5px;
+    padding: 0px 10px;
+    list-style: none;
+}
+nav ul li a{
+    color: var(--color-grey);
+    font-size: 20px;
+    font-weight: 500;
+
+}
+a.active , a:hover , a.RequestQuote{
+    color:var(--color-orange);
+    transition: .5s ease;
+    cursor: pointer;
+}
+.checkbtn{
+    font-size: 30px;
+    color: var(--color-grey);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+@media (max-width: 952px){
+    nav ul li a{
+        font-size: 16px;
+
+    }
+}
+@media (max-width:858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top:80px;
+        right: -100%;
+        text-align: center;
+        transition: all 0.5s;
+        background: var(--color-off-white);
+    }
+    nav ul li{
+        display: block;
+        line-height: 60px;
+    }
+    nav ul li a{
+        font-size: 20px ;
+    }
+    #check:checked ~ ul{
+        right: -5%;
+    }
+
+}   
+
+
+/* section 1 (home) */
+/* #homeVideo{
+position: relative;
+
+} */
+.home{
+    display: flex;
+}
+.video-container{
+    display: flex;
+    position: relative;
+}
+#homeVideo{
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.overlay{
+    position: absolute;
+    color: var(--color-white);
+    font-size: 7.5rem;
+    font-weight: 700;
+    text-shadow: 2px 4px 7px var(--color-black);
+    margin-top: 240px;
+    margin-left: 120px;
+
+}
+.overlay2{
+    position: absolute;
+    color: var(--color-white);
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-shadow: 2px 4px 7px var(--color-black);
+    margin-top: 450px;
+    margin-left: 120px;
+
+}
+.video-container .playbtn{
+    position: absolute;
+    /* color: var(--color-orange); */
+    margin-top: 270px;
+    margin-left: 750px;
+    opacity: 0.7;
+}
+.message-icon{
+    position: fixed;
+    display: flex;
+    bottom: 30px;
+    right: 25px;
+    z-index: 50;
+}
+.abt-btn{
+    position: absolute;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-top: 500px;
+    margin-left: 120px;
+    color: var(--color-white);
+    background-color: var(--color-orange);
+    border-radius: 10px;
+    padding: 10px 20px;
+
+}
+/* section 2 (what we offer page) */
+.heading h1{
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    top: 20;
+}
+.line{
+    width: 300px;
+    height: 5px;
+    background: var(--color-orange);
+}
+.box{
+    position: relative;
+    width: 350px;
+    height: 500px;
+    margin: 30px 50px;
+    display: inline-flex;
+    float: right;
+    padding: 10px;
+    /* margin-left: 410px;
+    max-width: 700px;
+    min-height: 200px; */
+    background-color: transparent;
+    border-width: 12px;
+    border-style: solid;
+    border-color: var(--color-orange);
+}
+.content{
+    display: flex;
+    margin: 100px 150px;
+    max-width: 700px;
+    font-size: 2.4rem;
+    text-align: justify;
+}
+.content h2{
+    font-size: 3.3rem;
+    margin-bottom: 10px;
+}
+.content li{
+    font-size: 2.3rem;
+    padding: 10px;
+    color: var(--color-orange);
+}
+.content p{
+    padding-top: 30px;
+}
+.offerPage .content .img{
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+
+
+}
