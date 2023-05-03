@@ -5,7 +5,7 @@
     --color-white: rgb(255, 255, 255);
     --color-off-white2:rgb(249, 223, 206);
     --color-grey: rgb(151, 149, 149);
-    --color-orange:#ff8533;
+    --color-orange:#ed9632;
     --color-light-orange:rgb(250, 171, 74);
     --bold: 700;
     --semi-bold: 500;
@@ -56,11 +56,12 @@ section{
     color: var(--color-white);
 }
 nav{
-    background:var(--color-off-white);
+    background:var(--color-white);
     height: 100px;
     width: 100%;
     position: fixed;
     z-index: 49;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
 .logo-img{
     width: 120px;
@@ -269,7 +270,7 @@ nav ul li a{
     margin-top: 20px;
     margin-left: 20px;
     margin-bottom: 20px;
-    opacity: 0.7;
+
     cursor: pointer;
 }
 
