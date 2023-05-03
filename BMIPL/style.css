@@ -399,11 +399,11 @@ nav ul li a{
 }
 .text-aboveBox{
     position: absolute;
-    font-size: 1.7rem;
-    font-weight: 500;
+    font-size: 2rem;
+    font-weight: 700;
     background:var(--color-white);
     margin-top: 50px;
-    margin-left: 90px;
+    margin-left: 80px;
     z-index: 41;
 }
 
@@ -516,7 +516,7 @@ nav ul li a{
     z-index: 30;
 }
 .section5-main-div .text{
-    /* position: absolute; */
+ /* position: absolute; */
     font-size: 7rem;
     font-weight: 800;
     z-index: 31;
@@ -545,6 +545,8 @@ nav ul li a{
     margin: 20px 50px;
     color: var(--color-black);
 }
+
+
 /* section 7 */
 
 
@@ -564,9 +566,8 @@ nav ul li a{
     width: 150px;
     height: 100px;
 }
-/* request a quote */
+/* section - request a quoate */
 .contact h1 {
-    font-family: 'Poppins', sans-serif, 'arial';
     font-weight: 600;
     font-size: 50px;
     color: var(--color-orange);
@@ -574,7 +575,6 @@ nav ul li a{
 }
 
 .contact h4 {
-    font-family: 'Roboto', sans-serif, 'arial';
     font-weight: 400;
     font-size: 20px;
     color: var(--color-grey);
@@ -591,8 +591,7 @@ nav ul li a{
 form { max-width:420px; margin:50px auto; }
 
 .quote-input {
-  color:var(--color-grey);
-  font-family: Helvetica, Arial, sans-serif;
+  color:var(--color-black);
   font-weight:500;
   font-size: 18px;
   border-radius: 5px;
@@ -603,20 +602,18 @@ form { max-width:420px; margin:50px auto; }
   padding: 13px;
   margin-bottom: 15px;
   width:100%;
-  box-sizing: border-box;
   outline:0;
 }
 
 .quote-input:focus { border:2px solid var(--color-orange) }
 
 textarea {
-  height: 80px;
+  height: 55px;
   line-height: 150%;
   resize:vertical;
 }
 
 [type="submit"] {
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   width: 100%;
   background:var(--color-orange);
   border-radius:5px;
@@ -630,6 +627,7 @@ textarea {
   margin-top:-4px;
   font-weight:700;
 }
+
 [type="submit"]:hover { background:var(--color-orange)}
 
 /* footer */
@@ -681,9 +679,6 @@ textarea {
 }
 .footer-items:nth-child(3) ul{
     margin-left: 100px;
-}
-hr{
-    color: var(--color-black);
 }
 .copyright{
     font-size: 1.5rem;
