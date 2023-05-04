@@ -38,7 +38,7 @@
         <i class="fa fa-bars"></i>
       </label>
       <a href="#home"><img src="./img/logo.png" alt="logo" class="logo-img"></a>
-      <a href="#home"></a><img src="./img/logotext.png" alt="logo text"></a>
+      <a href="#home"><img src="./img/logotext.png"  class="logo-text" alt="logo text"></a>
       <ul>
         <li class="listitem"><a style="text-decoration: none;" class="active" href="#">Home</a></li>
         <li class="listitem"><a style="text-decoration: none;" href="#">About Us</a></li>
@@ -67,9 +67,9 @@
           <!-- <svg height="100" width="100">
                 <circle cx="50" cy="50" r="40" stroke="transparent" stroke-width="3" fill="#FF823F" />
               </svg> -->
-              <div class="playbtn">
-                <a href=""><img src="https://img.icons8.com/ios-filled/30/ed9632/play-button-circled--v4.png" /></a>
-              </div>
+          <div class="playbtn">
+            <a href=""><img src="https://img.icons8.com/ios-filled/50/ed9632/play-button-circled--v4.png" /></a>
+          </div>
 
         </div>
         <i class="fa-solid fa-envelope fa-5x message-icon"></i>
@@ -86,29 +86,29 @@
       <div class="section2-orange-box1-inner">
         <p>Of High Quality woven block bottom sacks</p>
       </div>
-
-    <div class="offerPage">
-      <div class="heading">
-        <h1>What we offer</h1>
-      </div>
-      <div class="line"></div>
-      <div class="content">
-        <div class="text">
-          <h2>We provide</h2>
-          <ul type="bullets">
-            <li>environmentally safe, sound</li>
-            <li>sustainable woven sacks</li>
-          </ul>
-          <p>resulting in a lower carbon footprint and a lower negative impact on the environment. Our most recent and
-            technologically advanced manufacturing unit is well-equipped with all types of cutting-edge machinery and
-            instruments to meet the needs of our clients.</p>
-        </div>
-        <div class="box"></div>
-        <div class="img">
-          <img src="./img/product1.png" alt="product image">
-        </div>
-      </div>
     </div>
+      <div class="offerPage">
+        <div class="heading">
+          <h1>What we offer</h1>
+        </div>
+        <div class="line"></div>
+        <div class="content">
+          <div class="text">
+            <h2>We provide</h2>
+            <div class="bag-list">
+              <a>environmentally safe, sound</a><br>
+              <a>sustainable woven sacks</a>
+            </div>
+            <p>resulting in a lower carbon footprint and a lower negative impact on the environment.<br> Our most recent and
+              technologically advanced manufacturing unit is well-equipped with all types of cutting-edge machinery and
+              instruments to meet the needs of our clients.</p>
+          </div>
+          <div class="box"></div>
+          <div class="img">
+            <img src="./img/product1.png" alt="product image">
+          </div>
+        </div>
+      </div>
   </section>
 
   <!-- -----------------section 3------------------- -->
@@ -121,43 +121,42 @@
     </div>
     <!--  -->
     <div id="circle-carousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active container-fluid">
+          <div class="circleimg">
+            <img src="./img/1.png" alt="progress 75">
+          </div>
+        </div>
+        <div class="carousel-item container-fluid">
+          <div class="circleimg">
+            <img src="./img/2.png" alt="progress 75">
+          </div>
+        </div>
+        <div class="carousel-item container-fluid">
+          <div class="circleimg">
+            <img src="./img/3.png" alt="progress 75">
+          </div>
+        </div>
+        <div class="carousel-item container-fluid">
+          <div class="circleimg">
+            <img src="./img/4.png" alt="progress 75">
+          </div>
+        </div>
+
+      </div>
       <ol class="carousel-indicators">
         <li data-target="#circle-carousel" data-slide-to="0" class="active"></li>
         <li data-target="#circle-carousel" data-slide-to="1"></li>
         <li data-target="#circle-carousel" data-slide-to="2"></li>
         <li data-target="#circle-carousel" data-slide-to="3"></li>
       </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active container-fluid">
-          <div class="circleimg">
-            <img  src="./img/1.png" alt="progress 75">
-          </div>
-        </div>
-        <div class="carousel-item container-fluid">
-          <div class="circleimg">
-            <img  src="./img/2.png" alt="progress 75">
-          </div>
-        </div>
-        <div class="carousel-item container-fluid">
-          <div class="circleimg">
-            <img  src="./img/3.png" alt="progress 75">
-          </div>
-        </div>
-        <div class="carousel-item container-fluid">
-          <div class="circleimg">
-            <img  src="./img/4.png" alt="progress 75">
-          </div>
-        </div>
-        
-       
-      </div>
-     <button class="carousel-control-prev" type="button" data-target="#circle-carousel" data-slide="prev">
+      <button class="carousel-control-prev" type="button" data-target="#circle-carousel" data-slide="prev">
         <span class="prev-icon"><i class="fa fa-less-than"></i></span>
-        
+
       </button>
       <button class="carousel-control-next" type="button" data-target="#circle-carousel" data-slide="next">
         <span class="next-icon"><i class="fa fa-greater-than"></i></span>
-        
+
       </button>
     </div>
 
@@ -172,15 +171,18 @@
       </div>
       <div class="text-inside-box">
         Industrial
-        services for 
+        services for
         your business
       </div>
       <div class="text-div">
-        <p>Our Group is made up of two companies, JK Sons Engineers Pvt. Ltd. (JKSEPL) and Bilaspur Mining Industries Pvt. Ltd. (BMIPL),
-           both of which are based in Bilaspur, Chhattisgarh. We began our journey in 2008 with a traditional stitched bag unit capable of 
-           producing 3600 MT per year. As rightly said “Every big castle was once started with a single block; despise no small beginnings. 
+        <p>Our Group is made up of two companies, JK Sons Engineers Pvt. Ltd. (JKSEPL) and Bilaspur Mining Industries
+          Pvt. Ltd. (BMIPL),
+          both of which are based in Bilaspur, Chhattisgarh. We began our journey in 2008 with a traditional stitched
+          bag unit capable of
+          producing 3600 MT per year. As rightly said “Every big castle was once started with a single block; despise no
+          small beginnings.
           A little step taken every day builds up the hope of greater accomplishments. Do something every day!”</p>
-          <a href="#" class="btn" style="text-decoration: none;">Read More</a>
+        <a href="#" class="btn" style="text-decoration: none;">Read More</a>
       </div>
     </div>
 
@@ -195,7 +197,7 @@
           All these years, our different <br> services have delivered long lasting innovation
         </p>
         <div class="line"></div>
-  
+
       </div>
       <img class="ellipse2" src="./img/ellipse.png" alt="ellipse">
 
@@ -210,24 +212,27 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active container-fluid">
-         <div class="group-QA"><h2 class="question">How is your company positioned in this segment?</h2>
-          <p class="answer">We are the biggest manufacturer of woven block bottom bags in India and the second largest in the world.</p>
-         </div>
-      </div> 
+          <div class="group-QA">
+            <h2 class="question">How is your company positioned in this segment?</h2>
+            <p class="answer">We are the biggest manufacturer of woven block bottom bags in India and the second largest
+              in the world.</p>
+          </div>
+        </div>
         <div class="carousel-item container-fluid">
           <div class="group-QA">
             <h2 class="question">How is your company positioned in this segment?</h2>
-            <p class="answer">We are the biggest manufacturer of woven block bottom bags in India and the second largest in the world.</p>
+            <p class="answer">We are the biggest manufacturer of woven block bottom bags in India and the second largest
+              in the world.</p>
+          </div>
         </div>
-        </div>
-       
+
       </div>
       <button class="carousel-control-prev" type="button" data-target="#faq-carousel" data-slide="prev">
         <span class="prev-icon"><i class="fa fa-less-than"></i></span>
-        
+
       </button>
       <button class="carousel-control-next" type="button" data-target="#faq-carousel" data-slide="next">
-        <span class="next-icon"><i class="fa fa-greater-than"></i></span> 
+        <span class="next-icon"><i class="fa fa-greater-than"></i></span>
       </button>
     </div>
 
@@ -253,83 +258,93 @@
 
   </section>
   <!-- request a quote  -->
-<section class="quote-section" id="quote-section">
-  <div class="contact">
-    <div class="row">
-        <h1>Request A Quote</h1>
+  <section class="quote-section" id="quote-section">
+    <div class="contact">
+      <div class="main-div-quote">
+        <div class="left-div">
+          <div class="box1-div">
+            <div class="row">
+              <h1>Request A<br> Quote</h1>
+            </div>
+
+
+          </div>
+        </div> 
+        <div class="right-div">
+          <form>
+            <input name="name" type="text" class="quote-input" placeholder="Full Name" />
+            <input name="email" type="email" class="quote-input" placeholder="Email" />
+            <input name="Phone" type="text" class="quote-input" placeholder="Phone Number" />
+            <textarea name="text" class="quote-input" placeholder="Message..."></textarea>
+            <input type="submit" value="SUBMIT" />
+          </form>
+        </div>
+
+      </div>
+  </section>
+
+  <!-- footer -->
+  <footer id="footer" class="footer">
+    <div class="footer-main">
+      <div class="footer-items col-md-4">
+        <div class="logo-footer">
+          <img src="./img/logo.png" alt="logo">
+          <h3>BILASPUR MINING <br>INDUSTRIES PVT. LTD </h3>
+        </div>
+        <p>
+          <i class="fa fa-home"></i>BILASPUR MINING INDUSTRIES
+          PVT. LTD <br>
+          Village Pandhi, Seepat Road,
+          Bilaspur <br>pincode-495555 (C.G)
+        </p>
+        <p>
+          <i class="fa fa-phone"></i> +91 7752-299 360
+        </p>
+        <p>
+          <i class="fa fa-envelope"></i> info@bmipl.net
+        </p>
+        <p>Working 24 x 7</p>
+      </div>
+      <div class="footer-items col-md-4">
+        <div class="logo-footer">
+          <h3 style="border-bottom: 2px solid black; padding-bottom: 20px;">OUR PRODUCTS</h3>
+        </div>
+        <div class="item">
+          <a style="text-decoration: none;" href="#">BOPP Bags</a><br>
+          <a style="text-decoration: none;" href="#">WPP/LPP/AD*STAR Bags</a><br>
+          <a style="text-decoration: none;" href="#">Fabrics</a><br>
+        </div>
+
+      </div>
+      <div class="footer-items col-md-4">
+        <div class="logo-footer">
+          <h3 style="border-bottom: 2px solid black; padding-bottom: 20px;">NAVIGATION</h3>
+        </div>
+        <div class="item">
+          <a style="text-decoration: none;" href="#">Home</a><br>
+          <a style="text-decoration: none;" href="#">About</a><br>
+          <a style="text-decoration: none;" href="#">Product</a><br>
+          <a style="text-decoration: none;" href="#">Sustainability</a><br>
+          <a style="text-decoration: none;" href="#">Contact</a><br>
+        </div>
+
+      </div>
+
+      <div class="footer-items col-md-4">
+        <div class="logo-footer">
+          <h3>MAKE IN INDIA</h3>
+        </div>
+        <img src="./img/tiger-makeinIndia.png" alt="tiger" style="margin-left: 80px; margin-top: 50px;">
+
+      </div>
+
     </div>
-    <form>      
-      <input name="name" type="text" class="quote-input" placeholder="Full Name" /> 
-      <input name="email" type="text" class="quote-input" placeholder="Email" />     
-      <input name="Phone" type="text" class="quote-input" placeholder="Phone Number" />
-      <textarea name="text" class="quote-input" placeholder="Message..."></textarea>
-      <input type="submit" value="SUBMIT"/>
-    </form>
-  </div>
-</section>
-  
-<!-- footer -->
-<footer id="footer" class="footer">
-  <div class="footer-main">
-    <div class="footer-items col-md-4">
-      <div class="logo-footer">
-        <img src="./img/logo.png" alt="logo">
-        <h3>BILASPUR MINING <br>INDUSTRIES PVT. LTD </h3>
-      </div>
-      <p>
-        <i class="fa fa-home"></i>BILASPUR MINING INDUSTRIES 
-        PVT. LTD <br>
-        Village Pandhi, Seepat Road, 
-        Bilaspur <br>pincode-495555 (C.G)
-      </p>
-      <p>
-        <i class="fa fa-phone"></i> +91 7752-299 360
-      </p>
-      <p>
-        <i class="fa fa-envelope"></i> info@bmipl.net
-      </p>
-      <p>Working 24 x 7</p>
-    </div>
-    <div class="footer-items col-md-4">
-      <div class="logo-footer">
-        <h3 style="border-bottom: 2px solid black; padding-bottom: 20px;">OUR PRODUCTS</h3>
-      </div>
-      <div class="item">
-        <a style="text-decoration: none;" href="#">BOPP Bags</a><br>
-        <a style="text-decoration: none;" href="#">WPP/LPP/AD*STAR Bags</a><br>
-        <a style="text-decoration: none;" href="#">Fabrics</a><br>
-      </div>
-      
-    </div>
-    <div class="footer-items col-md-4">
-      <div class="logo-footer">
-        <h3 style="border-bottom: 2px solid black; padding-bottom: 20px;">NAVIGATION</h3>
-      </div>
-      <div class="item">
-        <a style="text-decoration: none;" href="#">Home</a><br>
-        <a style="text-decoration: none;" href="#">About</a><br>
-        <a style="text-decoration: none;" href="#">Product</a><br>
-        <a style="text-decoration: none;" href="#">Sustainability</a><br>
-        <a style="text-decoration: none;" href="#">Contact</a><br>
-      </div>
-      
+    <hr style="width:100%;text-align:left;margin-left:0;height:1px; background:black;">
+    <div class="copyright">
+      <p>Copyright &COPY; 2022 BMIPL. All Rights Reserved.</p>
     </div>
 
-    <div class="footer-items col-md-4">
-      <div class="logo-footer">
-        <h3>MAKE IN INDIA</h3>
-      </div>
-      <img src="./img/tiger-makeinIndia.png" alt="tiger" style="margin-left: 80px; margin-top: 50px;">
-      
-    </div>
-    
-  </div>
-  <hr style="width:100%;text-align:left;margin-left:0;height:1px; background:black;">
-  <div class="copyright">
-    <p>Copyright &COPY; 2022 BMIPL. All Rights Reserved.</p>
-  </div>
-
-</footer>
+  </footer>
   <!--  script  tag-->
   <script src="./index.js"></script>
 </body>
