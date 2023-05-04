@@ -280,7 +280,7 @@ nav ul .listitem a.RequestQuote {
 }
 
 .heading h1 {
-    font-size: 2rem;
+    font-size: 4rem;
     font-weight: 700;
     display: flex;
     justify-content: center;
@@ -288,9 +288,9 @@ nav ul .listitem a.RequestQuote {
 }
 
 .line {
-    margin-top: 30px;
+    margin-top: 60px;
     width: 300px;
-    height: 5px;
+    height: 4px;
     background: var(--color-orange);
 }
 
