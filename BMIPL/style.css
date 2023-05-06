@@ -97,7 +97,7 @@ nav ul .listitem {
 
 nav ul .listitem:hover {
     border-bottom: 4px solid var(--color-grey);
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 nav ul .listitem a {
@@ -1208,4 +1208,4 @@ nav{
 
 }
 }
-/* make responsive for tablet and mac */
+/* meia query for tab  */
