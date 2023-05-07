@@ -779,7 +779,7 @@ textarea {
 
 /* media queries */
 /* meia query for mac  */
-@media screen and (max-width:1025px) {
+@media screen and (max-width:1050px) {
     .logo-img{
         margin-top: 15px;
         width: 250px;
