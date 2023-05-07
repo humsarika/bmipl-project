@@ -885,6 +885,7 @@ nav ul .listitem a {
         font-weight: 400;
     
     }
+
     nav ul .listitem{
         padding: 0px 5px;
     }
@@ -894,6 +895,9 @@ nav ul .listitem a {
         margin-top: 10px;
         width: 250px;
         height: 70px;
+    }
+    .video-container{
+        top: 100px;
     }
     .main-div-quote .box1-div{
         width: 240px;
