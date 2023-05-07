@@ -779,14 +779,11 @@ textarea {
 
 /* media queries */
 /* meia query for mac  */
-@media screen and (max-width:1050px) {
+@media screen and (max-width:1025px) {
     .logo-img{
         margin-top: 15px;
-        width: 250px;
+        width: 230px;
         height: 70px;
-    }
-    .logo-text{
-        top: 10px;
     }
 
     nav{
@@ -803,12 +800,12 @@ nav ul .listitem:hover {
     margin-bottom: 10px;
 }
 nav ul .listitem{
-    padding: 0px 8px;
+    padding: 0px 5px;
 }
 
 nav ul .listitem a {
     /* color: var(--color-grey); */
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
 
 }
