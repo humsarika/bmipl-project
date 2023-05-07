@@ -802,6 +802,9 @@ nav ul .listitem:hover {
     border-bottom: 3px solid var(--color-grey);
     margin-bottom: 10px;
 }
+nav ul .listitem{
+    padding: 0px 8px;
+}
 
 nav ul .listitem a {
     /* color: var(--color-grey); */
@@ -886,9 +889,6 @@ nav ul .listitem a {
     
     }
 
-    nav ul .listitem{
-        padding: 0px 5px;
-    }
     nav .logo-img{
         padding: 5px;
         margin: 5px;
