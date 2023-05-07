@@ -33,12 +33,12 @@
 <body>
   <header>
     <nav>
+      <a href="#home"><img src="./img/logo3.png" alt="logo" class="logo-img"></a>
       <input type="checkbox" id="check">
       <label for="check" class="checkbtn">
         <i class="fa fa-bars"></i>
       </label>
-      <a href="#home"><img src="./img/logo.png" alt="logo" class="logo-img"></a>
-      <a href="#home"><img src="./img/logotext.png"  class="logo-text" alt="logo text"></a>
+      <!-- <a href="#home"><img src="./img/logotext.png"  class="logo-text" alt="logo text"></a> -->
       <ul>
         <li class="listitem"><a style="text-decoration: none;" class="active" href="#">Home</a></li>
         <li class="listitem"><a style="text-decoration: none;" href="#">About Us</a></li>
@@ -58,7 +58,7 @@
 
       <!-- Optional: some overlay text to describe the video -->
       <div class="home-content">
-        <div class="home-content-inner">
+        <div class="home-content-inner ">
           <pre>India's Biggest<br>Manufacturer</pre>
           <!-- <i
             class="fa-solid fa-play-circle fa-5x"
@@ -67,7 +67,7 @@
           <!-- <svg height="100" width="100">
                 <circle cx="50" cy="50" r="40" stroke="transparent" stroke-width="3" fill="#FF823F" />
               </svg> -->
-          <div class="playbtn">
+          <div class="playbtn reveal">
             <a href=""><img src="https://img.icons8.com/ios-filled/50/ed9632/play-button-circled--v4.png" /></a>
           </div>
 
@@ -88,11 +88,11 @@
       </div>
     </div>
       <div class="offerPage">
-        <div class="heading">
+        <div class="heading reveal">
           <h1>What we offer</h1>
         </div>
         <div class="line"></div>
-        <div class="content">
+        <div class="content reveal">
           <div class="text">
             <h2>We provide</h2>
             <div class="bag-list">
@@ -166,7 +166,7 @@
   <section id="section4" class="about">
     <!-- heading -->
     <h2 class="aboutus">About Us</h2>
-    <div class="main-div">
+    <div class="main-div reveal">
       <div class="box-div">
       </div>
       <div class="text-inside-box">
@@ -190,7 +190,7 @@
   <!-- ----------------section 5 ------------------- -->
 
   <section id="section5" class="section5">
-    <div class="section5-main-div">
+    <div class="section5-main-div reveal">
       <img class="ellipse1" src="./img/ellipse1.png" alt="ellipse">
       <div class="text">
         <p>
@@ -241,7 +241,7 @@
   <!-- --------------------section 7-------------------- -->
   <section class="section7" id="section7">
     <!-- image gallery of companies -->
-    <div class="img-gallery">
+    <div class="img-gallery reveal">
       <div class="img-item">
         <img src="./img/acclogo.webp" alt="acc logo">
       </div>
@@ -260,7 +260,7 @@
   <!-- request a quote  -->
   <section class="quote-section" id="quote-section">
     <div class="contact">
-      <div class="main-div-quote">
+      <div class="main-div-quote reveal">
         <div class="left-div">
           <div class="box1-div">
             <div class="row">
@@ -345,7 +345,25 @@
 
   </footer>
   <!--  script  tag-->
-  <script src="./index.js"></script>
+  <script type="text/javascript">
+    window.addEventListener('scroll',reveal);
+
+      function reveal(){
+          var reveals = document.querySelectorAll('.reveal');
+          for (var i=0; i<reveals.length; i++){
+              var windowheight = window.innerHeight;
+              var revealtop = reveals[i].getBoundingClientRect().top;
+              var revealpoint = 100;
+
+              if(revealtop < windowheight - revealpoint){
+                  reveals[i].classList.add('active');
+              }
+              else{
+                  reveals[i].classList.remove('active');
+              }
+          }
+        }
+  </script>
 </body>
 
 </html>
