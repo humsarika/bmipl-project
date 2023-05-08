@@ -57,9 +57,10 @@
       </video>
 
       <!-- Optional: some overlay text to describe the video -->
+      
       <div class="home-content">
-        <div class="home-content-inner ">
-          <pre>India's Biggest<br>Manufacturer</pre>
+        <div class="home-content-inner">
+          <pre class="reveal">India's Biggest<br>Manufacturer</pre>
           <!-- <i
             class="fa-solid fa-play-circle fa-5x"
             style="color: #FF823F; margin-bottom: 5px; margin-left: 15px"
@@ -353,7 +354,7 @@
           for (var i=0; i<reveals.length; i++){
               var windowheight = window.innerHeight;
               var revealtop = reveals[i].getBoundingClientRect().top;
-              var revealpoint = 100;
+              var revealpoint = 50;
 
               if(revealtop < windowheight - revealpoint){
                   reveals[i].classList.add('active');
