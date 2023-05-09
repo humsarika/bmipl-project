@@ -315,13 +315,25 @@ nav ul .listitem a.RequestQuote {
     height: 4px;
     background: var(--color-orange);
 }
-
+.small-line{
+    width: 8px;
+    height: 5px;
+    background: var(--color-black);
+    margin: 5px;
+}
+.list{
+    display: flex;
+    align-items: center;
+}
+.list:hover .small-line{
+    width: 15px;
+    transition: all 0.5s ease-in-out;
+}
 .offerPage .content .box {
     position: absolute;
     width: 250px;
     height: 300px;
     margin: 10px 10px 10px 70%;
-    /* display: inline-flexbox; */
     float: right;
     padding: 10px;
     background-color: transparent;
