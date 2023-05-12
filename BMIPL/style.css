@@ -622,6 +622,7 @@ nav ul .listitem a.RequestQuote {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-left: 0px;
 
 }
 
@@ -733,6 +734,9 @@ textarea {
 .logo-footer h3 {
     font-weight: 700;
 }
+.logo-footer img{
+    margin-right:50px;
+}
 
 .footer-items p i {
     font-size: 18px;
@@ -769,7 +773,7 @@ textarea {
 
 .footer-items {
     padding: 20px 30px;
-    max-width: 25%;
+    /* max-width: 25%; */
 }
 
 .footer-items:nth-child(2),
@@ -778,8 +782,8 @@ textarea {
     margin-top: 30px;
 }
 
-.footer-items:nth-child(3) .item {
-    margin-left: 100px;
+.footer-items:nth-child(1) .item , .footer-items:nth-child(3) .item {
+    padding-left: 20px;
 }
 
 .copyright {
@@ -789,7 +793,7 @@ textarea {
 }
 
 .footer-img {
-    margin-left: 20px;
+    /* margin-left: 20px; */
     margin-top: 50px;
 }
 
@@ -926,6 +930,9 @@ textarea {
         padding: 0;
 
     }
+    .logo-footer img{
+        margin-right:5px;
+    }
 
 }
 
@@ -982,7 +989,7 @@ textarea {
     }
 
     .left-div .box1-div .row h1 {
-        font-size: 5.4rem;
+        font-size: 4.5rem;
     }
 
     .img-gallery {
@@ -1011,6 +1018,13 @@ textarea {
 
     .footer-main .footer-items {
         max-width: 250px;
+    }
+
+    .footer-main .footer-items p{
+        font-weight: 600;
+    }
+    .footer-main .footer-items .item{
+        font-weight: 500;
     }
 
     .logo-footer p {
@@ -1488,6 +1502,7 @@ textarea {
         padding: 10px 10px;
         left: 0;
     }
+
 
     .logo-footer {
         display: flex;
